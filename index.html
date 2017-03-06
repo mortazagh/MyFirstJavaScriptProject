@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<script src="./js/jquery-3.1.1.js"></script>
+
+<script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+<body>
+    <input type="number" name="Income1" id="id_income_1" placeholder="Enter Your Income 1. . . ">
+    <!--input type="number" name="Income2" id="id_income_2" placeholder="Enter Your Income 2. . . ">
+    <input type="number" name="Income3" id="id_income_3" placeholder="Enter Your Income 3. . . ">
+    <input type="number" name="Income4" id="id_income_4" placeholder="Enter Your Income 4. . . "-->
+    <p> </p>
+    <input type="submit" id="income_save" value="Save Income" onclick="Income();">
+    <hr>
+    <input type="number" name="OutCome1" id="id_outcome1" placeholder="Enter Your outcomne 1. . . ">
+    <!--input type="number" name="OutCome2" id="id_outcome2" placeholder="Enter Your outcomne2 . . . ">
+    <input type="number" name="OutCome3" id="id_outcome3" placeholder="Enter Your outcomne3 . . . ">
+    <input type="number" name="OutCome4" id="id_outcome4" placeholder="Enter Your outcomne4 . . . "-->
+    <p> </p>
+    <input type="submit" id="outcome_save" value="Save Outcome" onclick="outcome();">
+
+
+
+    <br>
+    <input type="submit" id="compare" value="Compare" onclick="Compare()">
+    <br>
+    <p id="show in come"></p>
+    <p id="show out come"></p>
+    The Output is Shown here:
+    <p id="Output"></p>
+
+
+    <div class="container">
+
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="Analyze();">Analyze</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">آنالیز دخل و خرج</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modal_text"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
