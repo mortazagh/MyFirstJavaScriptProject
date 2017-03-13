@@ -10,54 +10,51 @@
 <script src="./js/jquery-3.1.1.js"></script>
 <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <center>
-<body>
-<br><br><br><br>	    
 
-    <p title="Only Numbers can be accepted!"><input type="number" name="Income1" id="id_income_1" placeholder="Enter Your Income . . . "></p>
-    <input type="submit" id="income_save" value="Save Income" onclick="Income();">
-    <hr>
-    <br>
-     <p title="Only Numbers can be accepted!"><input type="number" name="OutCome1" id="id_outcome1" placeholder="Enter Your outCome . . . "></p>
-    <br>
-    <input type="submit" id="outcome_save" value="Save Outcome" onclick="outcome();">
-    <br>
-    <input type="submit" id="compare" value="Compare" onclick="Compare()">
-    <br>
-    <p id="show in come"></p>
-<br>
-    <p id="show out come"></p>
-    The Output is Shown here:
-    <p id="Output"></p>
+    <body>
+        <br><br><br><br>
 
-
-    <div class="container">
-
-        <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="Analyze();">Analyze</button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">آنالیز دخل و خرج</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p id="modal_text"></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <p title="Only Numbers can be accepted!"><input type="number" name="Income1" id="id_income_1" placeholder="Enter Your Income . . ."></p>
+        <input type="submit" id="income_save" value="Save Income" onclick="Income();">
+        <hr>
+        <br>
+        <p title="Only Numbers can be accepted!"><input type="number" name="OutCome1" id="id_outcome1" placeholder="Enter Your outCome . . ."></p>
+        <br>
+        <input type="submit" id="outcome_save" value="Save Outcome" onclick="outcome()">
+        <br>
+        <br>
+        <input type="submit" id="compare" value="Compare" onclick="Compare()">
+        <br>
+        <br> The Income is :
+        <p id="show in come"></p>
+        <br> The Outcome is :
+        <p id="show out come"></p>
+        <br> The Output is Shown here:
+        <p id="Output"></p>
+        <div class="container">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" onclick="Analyze();">Analyze</button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">آنالیز دخل و خرج</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modal_text"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
-
-    </div>
-    <script src="./js/main.js"></script>
-</body>
+        <script src="./js/main.js"></script>
+    </body>
 </center>
+
 </html>
